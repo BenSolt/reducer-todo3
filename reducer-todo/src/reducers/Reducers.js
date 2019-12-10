@@ -41,11 +41,18 @@ export const todoReducer = (state, action) => {
         })
         return Clicktoggle;
         
-            
+    case "TOGGLE_TODO":
+            let Clear =
+            state.filter(item => {
+                if (item.completed === true){
+                    return !item.completed
+                }else{
+                    return item;
+                }
+            })
+            return Clear;
 
-
-
-
-
+        default: 
+        return state;     
     }
 }

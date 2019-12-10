@@ -21,11 +21,18 @@ return (
         value={newTitle}
         onChange={handleChanges}
         />
+
+        <button onClick={() => {
+            dispatch({ type:"ADD_TODO", payload: newTitle})
+        }}>ADD ITEM</button>
+
+        <button onClick={() => {
+            dispatch({ type:"CLEAR_TODO", payload: newTitle})
+        }}>REMOVE ITEM</button>
+
         
 
-
-
-
+        
 
 
     </div>

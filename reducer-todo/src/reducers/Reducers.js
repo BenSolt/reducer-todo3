@@ -23,8 +23,27 @@ export const todoReducer = (state, action) => {
                 completed: false,
                 id: Date.now()
 
+            }];
+
+    //TOGGLE TODO - STEP 4
+
+    case "TOGGLE_TODO":
+        let Clicktoggle =
+        state.map(item => {
+            if(item.id === action.payload){
+                return {
+                    ...item,
+                    completed: !item.completed
+                }
+            } else {
+                return item;
             }
-        ]
+        })
+        return Clicktoggle;
+        
+            
+
+
 
 
 

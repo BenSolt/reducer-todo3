@@ -41,7 +41,7 @@ export const todoReducer = (state, action) => {
         })
         return Clicktoggle;
         
-    case "TOGGLE_TODO":
+    case "CLEAR_TODO":
             let Clear =
             state.filter(item => {
                 if (item.completed === true){

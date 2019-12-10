@@ -1,17 +1,21 @@
 .App {
   text-align: center;
+  /* width: 500px; */
 }
 
 .Container{
   background: lightgray;
-margin: 0 70px 0 70px;
+margin: 2% 15% 0 15%;
+padding: 15px 0 15px 0;
 }
+
 
 .item{
   background: lightblue;
-  margin: 5px;
-  padding: 5px;
+  margin: 1% 10% 1% 10%;
+  padding: 15px;
   font-weight: bold;
+  
 }
 
 .item.completed{
@@ -23,12 +27,12 @@ margin: 0 70px 0 70px;
 
 .Input{
   border-radius: 2px;
-  /* padding: 5px; */
+  padding: 5px;
   margin: 12px;
   font-weight: bold;
 }
 .Btn{
-  
+  padding: 12px;
   margin: 6px;
   font-weight: bold;
   background: lightblue;

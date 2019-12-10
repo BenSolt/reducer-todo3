@@ -38,16 +38,17 @@ return (
 
         {state1.map(state => {
             return(
+                
+                    <div
+                    className={`item ${state.completed ? 'completed' :''}`}
+                    onClick={() => {
+                        dispatch({ type: "TOGGLE_TODO", payload: state.id })
+                    }}>
 
-                <div
-                className={`item ${state.completed ? 'completed' :''}`}
-                onClick={() => {
-                    dispatch({ type: "TOGGLE_TODO", payload: state.id })
-                }}>
+                    {state.item}
 
-                {state.item}
-
-                </div>
+                    </div>
+             
             )             
         })}
     </div>
